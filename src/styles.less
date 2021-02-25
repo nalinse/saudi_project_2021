@@ -1,0 +1,141 @@
+/* You can add global styles to this file, and also import other style files */
+a { cursor: pointer; }
+
+.app-container {
+    min-height: 320px;
+    overflow: hidden;
+}
+
+.btn-delete-user {
+    width: 40px;
+    text-align: center;
+    box-sizing: content-box;
+}
+
+.bg-dark {
+    background-color: #007bff!important;
+}
+
+.dashboard {
+    .container{
+        @media (min-width: 1200px){
+            max-width: 1992px;
+        }
+        margin-top: 20px;
+        display: flex;
+        margin-bottom: 20px;
+        .left-bar{
+            margin-right: 20px;
+            width: 20%;
+        }
+        
+        .right-bar{
+            margin-left: 20px;
+            width: 20%;
+        }
+
+        .wrapper{
+            h3{
+                font-size: 20px;
+                color: #bf1212;
+                font-weight: 700;
+            }
+            label{
+                cursor: pointer;
+            }
+            :hover{
+                color: rgb(49, 4, 4);
+                font-weight: bold;
+            }
+        }
+
+        .map-container{
+            background-image: url(../src/assets/saudi-map.png);
+            width: 80%;
+            height: 30vw;
+            background-size: cover;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            .location-maker {
+                background-image: url(../src/assets/map-pin.png);
+                width: 25px;
+                height: 30px;
+                background-size: cover;
+                position: absolute;
+            }
+
+            .central{left: 29vw;top: 13vw;}
+            .eastern{left: 38vw;top: 16vw;}
+            .western{left: 20vw;top: 15vw;}
+            .northern{left: 21vw;top: 4vw;}
+            .southern{left: 27vw; top: 20vw;}
+            .riyadh{left: 32vw;top: 15vw;}
+
+            .operational{ background-image: url(../src/assets/operational.gif);
+                width: 20px;
+                height: 20px;
+                background-size: cover;
+                position: absolute;
+                left: 15vw;
+                top: 6vw;
+            }
+            .non-operational { background-image: url(../src/assets/non-operational.gif);
+                width: 20px;
+                height: 20px;
+                background-size: cover;
+                position: absolute;
+                left: 24vw;
+                top: 20vw;}
+            .operational-degraded{ background-image: url(../src/assets/operational-degraded.gif);
+                width: 20px;
+                height: 20px;
+                background-size: cover;
+                position: absolute;
+                left: 30vw;
+                top: 16vw;}
+            .pts{ background-image: url(../src/assets/pts.gif);
+                width: 20px;
+                height: 20px;
+                background-size: cover;
+                position: absolute;
+                left: 35vw;
+                top: 19vw;}
+            
+            .asset-type-1 { width: 20px;
+                top: 10vw;
+                left: 17vw;position: absolute; height: 20px;background-image: url(../src/assets/asset-type-1.gif);}
+            .asset-type-2 { width: 20px;
+                top: 12vw; 
+                left: 20vw; position: absolute; height: 20px;background-image: url(../src/assets/asset-type-2.gif);}
+            .asset-type-3 { width: 20px;
+                top: 14vw;
+                left: 35vw; position: absolute; height: 20px;background-image: url(../src/assets/asset-type-3.gif);}
+            .asset-type-4 { width: 20px;
+                top: 5vw;
+                left: 27vw;position: absolute; height: 20px;background-image: url(../src/assets/asset-type-4.gif);}
+            .asset-type-5 { width: 20px;
+                top: 9vw;
+                left: 31vw; position: absolute; height: 20px;background-image: url(../src/assets/asset-type-5.gif);}
+            .asset-type-6 { width: 20px;
+                top: 12vw;
+                left: 33vw; position: absolute; height: 20px;background-image: url(../src/assets/asset-type-6.gif);}
+            .asset-type-7 { width: 20px;
+                top: 15vw;
+                left: 25vw; position: absolute; height: 20px;background-image: url(../src/assets/asset-type-7.gif);}
+            .asset-type-8 { width: 20px;
+                top: 8vw;
+                left: 22vw; position: absolute; height: 20px;background-image: url(../src/assets/asset-type-8.gif);}
+            .asset-type-9 { width: 20px;
+                top: 10vw;
+                left: 26vw; position: absolute; height: 20px;background-image: url(../src/assets/asset-type-9.gif);}
+
+            .airbase-1 { top: 9vw; left: 25vw; }
+            .airbase-2 { top: 10vw; left: 31vw;  }
+            .airbase-3 { top: 11vw; left: 18vw; }
+            .airbase-4 { top: 12vw; left: 45vw; }
+            .airbase { width: 20px;  height: 20px; position: absolute; background-image: url(../src/assets/airbase.gif); background-size: cover;}
+        }
+        
+    }
+}

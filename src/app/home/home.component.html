@@ -1,0 +1,60 @@
+﻿<div class="dashboard">
+    <div class="container">
+        <div class="left-bar">
+            <div class="wrapper">   
+                <h3>Airbase</h3>
+                <div *ngFor="let airbase of airbaseData">
+                    <label>
+                        <input type="checkbox" (change)="onChange(airbaseData, $event.target.checked, airbase.id)" />
+                        {{ airbase.name }}
+                    </label>
+                </div>
+            </div>    
+        </div>
+        <div class="map-container">
+            <div *ngFor="let sector of sectorsData">
+                <div *ngIf="sector.isShow" class="location-maker {{sector.class}}"></div>
+            </div>
+            <div *ngFor="let status of statusData">
+                <div *ngIf="status.isShow" class="{{status.class}}"></div>
+            </div>
+            <div *ngFor="let asset of assetTypeData">
+                <div *ngIf="asset.isShow" class="{{asset.class}}"></div>
+            </div>
+            <div *ngFor="let airbase of airbaseData">
+                <div *ngIf="airbase.isShow" class="airbase {{airbase.class}}"></div>
+            </div>
+        </div>
+
+        <div class="right-bar">
+            <div class="wrapper">
+                <h3>Sector</h3>
+                <div *ngFor="let sector of sectorsData">
+                    <label>
+                        <input class='check-box' type="checkbox" (change)="onChange(sectorsData, $event.target.checked, sector.id)" />
+                        {{ sector.name }}
+                    </label>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <h3>Status</h3>
+                <div *ngFor="let status of statusData">
+                    <label>
+                        <input class='check-box' type="checkbox" (change)="onChange(statusData, $event.target.checked, status.id)" />
+                        {{ status.name }}
+                    </label>
+                </div>
+            </div>
+            <div class="wrapper">
+                <h3>Asset Type</h3>
+                <div *ngFor="let asset of assetTypeData">
+                    <label>
+                        <input class='check-box' type="checkbox" (change)="onChange(assetTypeData, $event.target.checked, asset.id)" />
+                        {{ asset.name }}
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
